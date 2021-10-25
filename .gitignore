@@ -1,0 +1,17 @@
+.idea/
+*.log
+*.pot
+*.pyc
+*.bak
+*.dat
+*.pid
+*.dir
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+static
+.venv
+venv/
+ENV/
+bin/
