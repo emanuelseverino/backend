@@ -12,7 +12,9 @@ class UsuarioAdmin(UserAdmin):
     list_display = ('first_name', 'last_name', 'email', 'celular', 'is_staff')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Informações Pessoais', {'fields': ('first_name', 'last_name', 'celular')}),
+        ('Informações Pessoais', {'fields': ('foto', 'first_name', 'last_name',)}),
+        ('Redes Sociais', {'fields': ('celular', 'whatsapp', 'facebook', 'instagram', 'twitter')}),
+        ('Posição', {'fields': ('latitude', 'longitude')}),
         ('Permissões', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Datas Importantes', {'fields': ('last_login', 'date_joined')}),
     )

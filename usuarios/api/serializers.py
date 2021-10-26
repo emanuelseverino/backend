@@ -14,7 +14,9 @@ class UsuarioSerializer(ModelSerializer):
 
     class Meta:
         model = Usuario
-        fields = ['foto', 'first_name', 'last_name', ]
+        fields = ['foto', 'first_name', 'last_name', 'email', 'celular', 'whatsapp', 'facebook', 'instagram', 'twitter',
+                  'latitude',
+                  'longitude']
 
 
 class CriarUsuarioSerializer(ModelSerializer):
@@ -31,4 +33,3 @@ class CriarUsuarioSerializer(ModelSerializer):
         usuario.set_password(validated_data['password'])
         usuario.save()
         return usuario
-

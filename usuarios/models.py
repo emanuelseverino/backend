@@ -35,6 +35,7 @@ class Usuario(AbstractUser):
     cidade = models.CharField('Cidade', max_length=200, blank=True, null=True)
     is_staff = models.BooleanField('Membro da Equipe', default=False)
     instagram = models.CharField('Instagram', unique=True, max_length=30, blank=True, null=True)
+    whatsapp = models.CharField('Whatsapp', unique=True, max_length=30, blank=True, null=True)
     facebook = models.CharField('Facebook', unique=True, max_length=30, blank=True, null=True)
     twitter = models.CharField('Twitter', unique=True, max_length=30, blank=True, null=True)
     latitude = models.CharField('Latitude', unique=True, max_length=30, blank=True, null=True)
