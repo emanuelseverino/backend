@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'usuarios',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +85,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = Path(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    BASE_DIR / "statics",
+]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path(BASE_DIR, 'media')
 
