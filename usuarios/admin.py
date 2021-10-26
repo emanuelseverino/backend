@@ -9,7 +9,7 @@ class UsuarioAdmin(UserAdmin):
     add_form = UsuarioCreationForm
     form = UsuarioChangeForm
     model = Usuario
-    list_display = ('first_name', 'last_name', 'cidade', 'email', 'celular', 'is_staff')
+    list_display = ('first_name', 'last_name', 'email', 'celular', 'is_staff')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
         ('Informações Pessoais', {'fields': ('first_name', 'last_name', 'celular')}),
